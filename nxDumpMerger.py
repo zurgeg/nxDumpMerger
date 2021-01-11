@@ -98,6 +98,9 @@ class App:
         elif (filename[-3:] == 'xci' or filename[-3:] == 'nsp') and len(extension) == 3 and extension[1:].isdigit(): # .xci.00 or .nsp.00
             outputFile = filename
             outputPath = os.path.join(outputDir, outputFile)
+        elif (filename[-3:] == 'iso' or filename[-3:] == 'wbfs') and len(extension) == 3 and extension[1:].isdigit(): # .iso.00 or .wbfs.00
+            outputFile = filename
+            outputPath = os.path.join(outputDir, outputFile)
                     
         elif not extension and len(filename) == 2 and filename.isdigit(): # folder/00
             outputFile = outputDir + '.' + 'nsp'
