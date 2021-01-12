@@ -9,6 +9,7 @@ Simple merger for Nintendo Switch dumped content, designed to merge dumps from n
 - `file.xci.00`, `file.xci.01`, etc
 - `folder/00`, `folder/01`, etc
   - This will output a .nsp file
+- `file.iso.00`
 
 Please [report any issues](https://github.com/emiyl/nxDumpMerger/issues) found.
 
